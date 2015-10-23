@@ -1,0 +1,19 @@
+.shoutbox{
+    min-height: 4800px;
+    width: 640px;
+    border: solid 2px blue;
+    padding: 5px;
+}
+
+.messengerBox{
+    height: 20px;
+    max-width: 635px;
+    border: solid 2px red;
+    padding: 5px;
+    margin: 5px;
+}
+
+:target {
+    background-color: yellow;
+}
+

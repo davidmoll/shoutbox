@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+#{set title:'Create box' /}
+${box.title}
+
+<div id="shout" class="shoutbox"/>
+#{list box.shouts, as: "shout"}
+<div class="messengerBox">
+    <a id="${shout_index}">${shout.name+": "} ${shout.text+'\n'} </a> <br><br>
+</div>
+#{/list}
+</div>
+
+<div>
+    <p>
+#{form @Application.createShout(box.id)}
+    <input type='submit'/>
+    <input name="name" type="text"/>
+    <input name="message" type="text"/>
+    </p>
+#{/form}
+</div>
+<a href="#1">Click this to link to first post</a>
