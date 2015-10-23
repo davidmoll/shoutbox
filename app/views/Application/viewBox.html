@@ -2,10 +2,11 @@
 #{set title:'Create box' /}
 ${box.title}
 
-<div id="shout" class="shoutbox"/>
+<div id="shout" class="shoutbox">
 #{list box.shouts, as: "shout"}
 <div class="messengerBox">
     <a id="${shout_index}">${shout.name+": "} ${shout.text+'\n'} </a> <br><br>
+
 </div>
 #{/list}
 </div>
